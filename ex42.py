@@ -11,4 +11,4 @@ elif 15 > prova <=19:
 elif 20 > prova <=25:
     print('Sua idade é de {} anos e sua categoria será SÊNIOR.'.format(prova))
 else:
-    print('Sua idade é {} anos e sua categoria é MASSTER.'.format(prova))
+    print('Sua idade é {} anos e sua categoria é MASTER.'.format(prova))
