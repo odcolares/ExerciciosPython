@@ -1,4 +1,5 @@
 from random import randint
+from time import sleep
 itens = ('Pedra', 'Papel', 'Tesoura')
 computador = randint(0, 2)
 print('''Suas opçoes:
@@ -6,6 +7,11 @@ print('''Suas opçoes:
 1 - Papel
 2 - Tesoura''')
 jogador = int(input('Qual a sua jogada? '))
+print('JO')
+sleep(1)
+print('KEM')
+sleep(1)
+print('PO')
 print('-=' * 11)
 print('Jogador jogou {}'.format(itens[jogador]))
 print('Computador jogou {}'.format(itens[computador]))
@@ -25,7 +31,7 @@ elif computador == 1: #computador jogou Papel.
     elif jogador == 1:
         print('Vc empatou...')
     elif jogador == 2:
-        print('Vc perdeu')
+        print('Jagada empatada')
     else:
         print('Jogada invalida!!!')
 if computador == 2: #computador jogou tesoura.
@@ -34,4 +40,6 @@ if computador == 2: #computador jogou tesoura.
     elif jogador == 1:
         print('Vc ganhou!')
     elif jogador == 2:
-        print('Vc empatou')
+        print('Jagada empatada:')
+    else:
+        print('Jogada invalida!!!')
