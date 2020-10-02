@@ -1,5 +1,4 @@
 from random import randint
-from time import sleep
 pc = randint(0, 10)
 print('Digite um numero para tentar advinha o numero que eu escolhi: ')
 acertou = False
