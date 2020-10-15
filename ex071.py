@@ -3,7 +3,7 @@ print('{:^30}'.format('Banco OPC'))
 print('=' * 30)
 valor = int(input('Qual o valor que vc deseja sacar? R$'))
 total = valor
-ced = 100
+ced = 200
 totced = 0
 while True:
     if total >= ced:
@@ -12,6 +12,8 @@ while True:
     else:
         if totced > 0:
             print(f'{totced} cedulas de R${ced}')
+        if ced == 200:
+            ced = 100
         if ced == 100:
             ced = 50
         elif ced == 50:
@@ -25,6 +27,7 @@ while True:
         totced = 0
         if total == 0:
             break
+print('=' * 30)
 print('Obrigado por usar o Banco OPC, Volte sempre !!!')
-
+print('=' * 30)
 
